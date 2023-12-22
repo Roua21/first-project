@@ -4,9 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo ' Executing yarn'
-                nodejs('Nodejs-21.5.0'){
-                    sh'yarn install'
-                }
+                nodejs('Nodejs-21.5.0')
             }
         
         }
