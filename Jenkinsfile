@@ -3,18 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'Building the application'
+                echo ' Executing yarn'
+                nodejs('Nodejs-21.5.0'){
+                    sh'yarn install'
+                }
             }
-        }
-        stage('Test') { 
-            steps {
-                echo 'Testing the application'
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                echo 'Deploying the application'// 
-            }
+        
         }
     }
 }
