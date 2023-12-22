@@ -6,8 +6,8 @@ pipeline {
                 echo ' Executing yarn'
                 nodejs('Nodejs-21.5.0'){
                     echo 'nodejs installed'
+                }
             }
-        
         }
     }
 }
